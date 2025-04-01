@@ -1,0 +1,97 @@
+.destination {
+  background-color: rgba(255, 145, 77, 0.49);
+  padding: 80px;
+  margin-top: 80px;
+}
+
+.header {
+  text-align: center;
+  color: #058e4c;
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+  font-size: 54px;
+  margin-bottom: 80px;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1080px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: zoomIn 0.8s ease-out forwards;
+}
+
+.img:nth-child(odd) {
+  animation-delay: 0.3s;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.image {
+  width: 300px;
+  max-height: 350px;
+  transition: transform 0.4s ease-in-out;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+.imageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+}
+
+.citys {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.cityLink {
+  text-decoration: none;
+  color: black;
+  font-family: "Kalam", serif;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cityLink:hover {
+  color: white;
+  transform: translateX(5px);
+}

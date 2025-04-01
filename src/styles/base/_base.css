@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacquard+24&family=Kavoon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Jacquard+24&family=Kavoon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Jacquard+24&family=Jost:ital,wght@0,100..900;1,100..900&family=Kavoon&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
